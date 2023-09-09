@@ -1,0 +1,170 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* write neccessary css for the grid- simple box style, use the css reset from the star project */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+ 
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Basic theme styles */
+body {
+
+  font-family: "Wotfard", sans-serif;
+  background-color: #e5c1f1;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  border-bottom: 3px solid hsl(0deg 0% 25%);
+}
+th[scope="col"] {
+  text-align: right;
+  border-right: 3px solid hsl(0deg 0% 25%);
+  border-bottom: none;
+  padding-right: 8px;
+}
+tr:not(:last-of-type) th[scope="col"],
+tr:not(:last-of-type) td {
+  border-bottom: 1px solid hsl(0deg 0% 50%);
+}
+
+/* Custom fonts */
+@font-face {
+  font-family: "Wotfard";
+  src: url("https://sandpack-bundler.vercel.app/fonts/wotfard/wotfard-semibold-webfont.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Wotfard";
+  src: url("https://sandpack-bundler.vercel.app/fonts/wotfard/wotfard-medium-webfont.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Wotfard";
+  src: url("https://sandpack-bundler.vercel.app/fonts/wotfard/wotfard-regular-webfont.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.grid {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 70px 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 1, 0.3), 0 2px 4px rgba(0, 5, 0, 0.3);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #efefef;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+}
+
+.count {
+  color: #4012ce;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.cellValue{
+  color: #898795;
+}
